@@ -47,9 +47,18 @@ const Footer = () => {
                 Connect with Us
               </p>
               <div className="flex flex-col gap-4">
-                <input type="text" />
-                <input type="text" />
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="py-1 pl-2 rounded-lg border"
+                />
+                <input
+                  type="text"
+                  placeholder="Email"
+                  className="py-1 pl-2 rounded-lg border"
+                />
                 <textarea
+                  className="py-1 pl-2 rounded-lg border"
                   placeholder="Messages"
                   name="messages"
                   id="textarea"
