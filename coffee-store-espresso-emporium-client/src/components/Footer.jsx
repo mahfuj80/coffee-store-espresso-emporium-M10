@@ -6,9 +6,9 @@ const Footer = () => {
       <div className=" w-full">
         {/* body  */}
         <div className="bg-[url('/images/more/13.jpg')] text-center md:text-left">
-          <div className="flex flex-col md:flex-row items-center justify-center w-[80%] mx-auto gap-20 pt-16 pb-11">
+          <div className="flex flex-col md:flex-row items-center justify-center container mx-auto px-10 md:px-20 gap-20 pt-16 pb-11">
             {/* links */}
-            <div className="w-1/2 space-y-5">
+            <div className="md:w-1/2  space-y-5">
               <img
                 className="w-14 mx-auto md:ml-0"
                 src="/images/more/logo.png"
@@ -42,7 +42,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Message */}
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <p className="text-[#331A15] text-3xl font-semibold mb-3">
                 Connect with Us
               </p>
@@ -74,7 +74,7 @@ const Footer = () => {
         </div>
         {/* footer */}
         <div className="bg-[url('/images/more/24.jpg')] text-center">
-          <h2 className="text-4xl py-3 text-white">
+          <h2 className="text-xl md:text-4xl py-3 text-white">
             Copyright Espresso Emporium ! All Rights Reserved
           </h2>
         </div>
