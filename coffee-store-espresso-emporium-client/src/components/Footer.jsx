@@ -22,10 +22,10 @@ const Footer = () => {
                 your memorable moments, to share with your best companion.
               </p>
               <div className="flex gap-2 w-fit mx-auto md:ml-0 text-[#331A15] text-3xl">
-                <FaFacebook></FaFacebook>
-                <FaTwitter></FaTwitter>
-                <FaInstagram></FaInstagram>
-                <FaLinkedin></FaLinkedin>
+                <FaFacebook className="cursor-pointer"></FaFacebook>
+                <FaTwitter className="cursor-pointer"></FaTwitter>
+                <FaInstagram className="cursor-pointer"></FaInstagram>
+                <FaLinkedin className="cursor-pointer"></FaLinkedin>
               </div>
               <p className="text-[#331A15] text-3xl font-semibold">
                 Get In Touch
