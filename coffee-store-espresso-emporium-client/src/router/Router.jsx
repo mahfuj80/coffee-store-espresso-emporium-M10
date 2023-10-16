@@ -5,6 +5,8 @@ import Home from '../Pages/Home';
 import AddCoffee from '../Pages/AddCoffee';
 import View from '../Pages/View';
 import Edit from '../Pages/Edit';
+import Login from '../Pages/Login';
+import SignUp from '../Pages/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: '/edit-coffee',
         element: <Edit></Edit>,
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
+      },
+      {
+        path: '/registration',
+        element: <SignUp></SignUp>,
       },
     ],
   },
