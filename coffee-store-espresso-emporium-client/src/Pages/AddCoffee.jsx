@@ -2,6 +2,38 @@ import { Link } from 'react-router-dom';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const AddCoffee = () => {
+  const handleAddCoffee = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const supplier = form.supplier.value;
+    const category = form.category.value;
+    const chef = form.chef.value;
+    const details = form.details.value;
+    const taste = form.taste.value;
+    const photo = form.photo.value;
+    const coffeeInfo = {
+      name,
+      supplier,
+      category,
+      chef,
+      details,
+      taste,
+      photo,
+    };
+    fetch('http://localhost:5000/coffees', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(coffeeInfo),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+    //     form.reset();
+  };
   return (
     <div className="container mx-auto">
       <div className="w-full">
@@ -25,7 +57,7 @@ const AddCoffee = () => {
             </p>
           </div>
           {/* form */}
-          <form className=" font-sans">
+          <form onSubmit={handleAddCoffee} className=" font-sans">
             <div className="w-full md:flex md:gap-6 md:px-6 px-8 mb-6">
               <div className="w-full md:w-1/2 space-y-6">
                 <div className="form-control w-full">
