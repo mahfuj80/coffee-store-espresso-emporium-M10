@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Login = () => {
   return (
     <div>
@@ -40,8 +42,19 @@ const Login = () => {
                   </a>
                 </label>
               </div>
+              <p className="my-5">
+                New Here{' '}
+                <Link
+                  className="font-bold text-green-600 underline"
+                  to={'/sign-up'}
+                >
+                  Sign-Up
+                </Link>
+              </p>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn w-full text-[#331A15] bg-[#D2B48C] hover:bg-[#b89870]">
+                  Login
+                </button>
               </div>
             </form>
           </div>
